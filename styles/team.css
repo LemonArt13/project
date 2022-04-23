@@ -1,0 +1,283 @@
+@import url(home.css);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/project/img/bgteam.png) center/cover no-repeat ;
+  height: 660px;
+}
+
+.navlogo{
+    display: flex;
+    align-items: center;
+}
+  
+.navbar{
+  padding-top: 10px;
+}
+
+.CompName{
+  margin-left: 15px;
+}
+
+.CompText_1{
+top: calc(50% - 26px/2 - 13px);
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+color: #DDDDE2;
+}
+
+.CompText_2{
+top: calc(50% - 18px/2 + 17px);
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+color: #989AA9;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_header_nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav_header_item{
+  margin: 0px 10px;
+  border-right: #DDDDE2 solid 2px;
+}
+
+.menu-link{
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #DDDDE2;
+  padding-right: 16px;
+  transition: all 0.2s ease;
+}
+
+.menu-link_active{
+  color: #ffffff ;
+  font-size: 18.5px;
+}
+
+.menu-link:hover{
+  font-size: 19px;
+  color: #ffffff;
+}
+
+.nav_header_item:last-child{
+  border-right: none;
+}
+
+.top_tittle{
+  font-family: 'Comfortaa', sans-serif;;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 26px;
+  line-height: 32px;
+  color: #CDCFDF;
+  margin-bottom: 10px;
+}
+
+.tittle_header{
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 68px;
+  color: #EEEFF1;
+  margin-bottom: 16px;
+}
+
+.under_header_tittle{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #DDDDE2;
+  max-width: 577px;
+}
+
+.Team{
+  padding-top: 180px;
+}
+
+.Team_Top{
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.Team_Info{
+  max-width: 696px;
+  margin-right: 40px;
+}
+
+.Team_Tittle{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 64px;
+  color: #03115F;
+  margin: 0px 0px 24px 0px;
+  max-width: 500px;
+}
+
+.Team_under_text{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 325;
+  font-size: 20px;
+  line-height: 28px;
+  color: #535670;
+  max-width: 696px;
+}
+
+.team_grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.team_flex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.team_link{
+  position: relative;
+}
+
+.img_link_team{
+position: absolute;
+right: 24px;
+top: 20px;
+}
+
+.name_person{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #03115F;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.position_person{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #535670;
+  margin-top: 0;
+}
+
+.Team_Under{
+  padding-bottom: 218px;
+}
+
+.background{
+  background: url(/project/img/bgteamunder.png) center/cover no-repeat;
+  height: 820px;
+}
+
+.Join_Us_content{
+  padding-top: 345px;
+}
+
+.Join_top_tittle{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  color: #DDDDE2;
+  margin-bottom: 8px;
+}
+
+.Join_Tittle{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 68px;
+  color: #EEEFF1;
+  margin-bottom: 5px;
+}
+
+.btn{
+  background: #1E74EC;
+  padding: 14px 20px;
+  font-family: 'Roboto', cursive;
+  font-style: normal;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 16px 30px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #EEEFF1;
+  border: none;
+  transition: background-color 75ms;
+  margin-top: 60px;
+}
+
+.btn:hover{
+  background-color:#185ec0f3;
+}
